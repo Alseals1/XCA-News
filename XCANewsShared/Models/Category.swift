@@ -1,10 +1,3 @@
-//
-//  Category.swift
-//  XCANews
-//
-//  Created by Alfian Losari on 6/27/21.
-//
-
 import Foundation
 
 enum Category: String, CaseIterable {

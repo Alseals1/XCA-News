@@ -1,10 +1,3 @@
-//
-//  RetryView.swift
-//  XCANews
-//
-//  Created by Alfian Losari on 6/27/21.
-//
-
 import SwiftUI
 
 struct RetryView: View {

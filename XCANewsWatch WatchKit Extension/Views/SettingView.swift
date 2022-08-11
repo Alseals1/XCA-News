@@ -1,14 +1,4 @@
-//
-//  SettingView.swift
-//  XCANewsWatch WatchKit Extension
-//
-//  Created by Alandis Seals on 8/10/22.
-//
-
 import SwiftUI
-
-let complicationCategoryKey = "selected_complication_category"
-
 
 struct SettingView: View {
     @EnvironmentObject private var bookmarkVM: ArticleBookmarkViewModel
@@ -21,8 +11,6 @@ struct SettingView: View {
             _selectedCategory = newValue.rawValue
         }
     }
-    
-    
     
     var body: some View {
         Form {
@@ -63,3 +51,6 @@ struct SettingView_Previews: PreviewProvider {
             .environmentObject(ArticleBookmarkViewModel.shared)
     }
 }
+
+
+let complicationCategoryKey = "selected_complication_category"

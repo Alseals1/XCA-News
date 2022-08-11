@@ -1,16 +1,12 @@
 import SwiftUI
 
-
 struct ContentView: View {
     @State private var selectedMenuItemId: MenuItem.ID?
     @EnvironmentObject private var searchVM: ArticleSearchViewModel
     @State private var complicationArticle: Article?
     
     var body: some View {
-        
-        
         ZStack {
-            
             navigationLinkForMenuItem(MenuItem.search) {
                 EmptyView()
             }
@@ -43,14 +39,13 @@ struct ContentView: View {
             }
             .searchable(text: $searchVM.searchQuery)
             .onSubmit(of: .search, search)
-        .navigationTitle("XCA NEWS")
-        .onReceive(NotificationCenter.default.publisher(for: .articleSent, object: nil)) { notification in
-            guard let article = notification.userInfo?["article"] as? Article else {
-                return
+            .navigationTitle("XCA NEWS")
+            .onReceive(NotificationCenter.default.publisher(for: .articleSent, object: nil)) { notification in
+                guard let article = notification.userInfo?["article"] as? Article else {
+                    return
+                }
+                complicationArticle = article
             }
-            complicationArticle = article
-            
-        }
         }
     }
     
@@ -70,7 +65,6 @@ struct ContentView: View {
         case .setting:
             SettingView()
         }
-        
     }
     
     private func navigationLinkForMenuItem<Label: View>(_ item: MenuItem, @ViewBuilder label: () -> Label) -> some View {
@@ -79,6 +73,7 @@ struct ContentView: View {
         }
         .listItemTint(item.listItemTintColor)
     }
+    
     private func listRowForCategoryMenuItem(_ item: MenuItem) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Image(systemName: item.systemImage)
@@ -102,13 +97,10 @@ struct ContentView: View {
     }
 }
 
-
-
 fileprivate extension MenuItem {
-    
     var listItemTintColor: Color? {
+        
         switch self {
-            
         case .category(let category):
             switch category {
             case .general:
@@ -128,10 +120,7 @@ fileprivate extension MenuItem {
             }
         default: return nil
         }
-        
-        
     }
-    
 }
 
 

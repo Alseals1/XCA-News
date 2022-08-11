@@ -1,10 +1,3 @@
-//
-//  ComplicationView.swift
-//  XCANews
-//
-//  Created by Alandis Seals on 8/11/22.
-//
-
 import SwiftUI
 import ClockKit
 

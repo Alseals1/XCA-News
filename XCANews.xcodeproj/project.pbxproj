@@ -61,9 +61,9 @@
 		C6DC7D3528A53FE400DB0A87 /* WatchConnectivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC7D3428A53FE400DB0A87 /* WatchConnectivityViewModel.swift */; };
 		C6DC7D3628A53FE400DB0A87 /* WatchConnectivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC7D3428A53FE400DB0A87 /* WatchConnectivityViewModel.swift */; };
 		C6DC7D3A28A55EDD00DB0A87 /* ComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC7D3828A55EDD00DB0A87 /* ComplicationView.swift */; };
-		C6DC7D3C28A561A300DB0A87 /* ArticleDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC7D3B28A561A300DB0A87 /* ArticleDataStore.swift */; };
 		C6DC7D3E28A564AB00DB0A87 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC7D3D28A564AB00DB0A87 /* ExtensionDelegate.swift */; };
 		C6DC7D4028A5698200DB0A87 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC7D3F28A5698200DB0A87 /* SettingView.swift */; };
+		C6DC7D4228A572A200DB0A87 /* ArticleDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC7D3B28A561A300DB0A87 /* ArticleDataStore.swift */; };
 		C6E86A1A28A450A200DFAB4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E86A1928A450A200DFAB4F /* Assets.xcassets */; };
 		C6E86A2028A450A200DFAB4F /* XCANewsWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C6E86A1F28A450A200DFAB4F /* XCANewsWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C6E86A2528A450A200DFAB4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E86A2428A450A200DFAB4F /* ContentView.swift */; };
@@ -390,8 +390,6 @@
 				C6E86A2A28A450A200DFAB4F /* Assets.xcassets */,
 				C6E86A2F28A450A200DFAB4F /* Info.plist */,
 				C6E86A2C28A450A200DFAB4F /* Preview Content */,
-				C6DC7D3B28A561A300DB0A87 /* ArticleDataStore.swift */,
-				C6DC7D3D28A564AB00DB0A87 /* ExtensionDelegate.swift */,
 			);
 			path = "XCANewsWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -407,9 +405,11 @@
 		C6E86A4A28A4B12E00DFAB4F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C6DC7D3D28A564AB00DB0A87 /* ExtensionDelegate.swift */,
 				C6E86A4B28A4B16400DFAB4F /* ArticleDetailView.swift */,
 				C6DC7D3828A55EDD00DB0A87 /* ComplicationView.swift */,
 				C6DC7D3F28A5698200DB0A87 /* SettingView.swift */,
+				C6DC7D3B28A561A300DB0A87 /* ArticleDataStore.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -639,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6E86A3E28A4515F00DFAB4F /* DataStore.swift in Sources */,
+				C6DC7D4228A572A200DB0A87 /* ArticleDataStore.swift in Sources */,
 				C6E86A4628A45B3500DFAB4F /* ArticleListView.swift in Sources */,
 				C6DC7D3E28A564AB00DB0A87 /* ExtensionDelegate.swift in Sources */,
 				C6E86A2528A450A200DFAB4F /* ContentView.swift in Sources */,
@@ -662,7 +663,6 @@
 				C6E86A4528A45B3500DFAB4F /* ArticleRowView.swift in Sources */,
 				C6E86A4328A4515F00DFAB4F /* Category.swift in Sources */,
 				C6E86A4428A4518300DFAB4F /* NewsAPI.swift in Sources */,
-				C6DC7D3C28A561A300DB0A87 /* ArticleDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

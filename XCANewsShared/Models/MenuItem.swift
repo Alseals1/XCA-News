@@ -1,10 +1,3 @@
-//
-//  MenuItem.swift
-//  XCANews
-//
-//  Created by Alfian Losari on 7/10/21.
-//
-
 import Foundation
 
 enum MenuItem: CaseIterable {

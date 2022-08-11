@@ -1,10 +1,3 @@
-//
-//  NewsTabView.swift
-//  XCANews
-//
-//  Created by Alfian Losari on 6/27/21.
-//
-
 import SwiftUI
 
 struct NewsTabView: View {
@@ -98,13 +91,11 @@ struct NewsTabView: View {
         }
     }
     #endif
-
 }
 
 struct NewsTabView_Previews: PreviewProvider {
     
     @StateObject static var articleBookmarkVM = ArticleBookmarkViewModel.shared
-
     
     static var previews: some View {
         NewsTabView(articles: Article.previewData)
